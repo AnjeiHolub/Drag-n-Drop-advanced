@@ -1,0 +1,17 @@
+.instagram {
+  list-style: none;
+  padding: 0;
+}
+
+.instagram__list {
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid #dedede;
+	border-radius: 3px;
+	background-color: #fff;
+}
+
+.instagram__photo {
+	width: 200px;
+	height: 200px;
+}
