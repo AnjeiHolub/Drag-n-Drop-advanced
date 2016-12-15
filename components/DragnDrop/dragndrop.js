@@ -14,10 +14,9 @@
       this._elem.ondragstart = function() {
         return false;
       };
-     /* this._elem.addEventListener('startdrag', (event) => {
-
-        event.preventDefault();
-      });*/
+      this._elem.addEventListener('startdrag', (event) => {
+        if (event.target.classList.contains('instagram__photo')) event.preventDefault();
+      });
         
     }
 
