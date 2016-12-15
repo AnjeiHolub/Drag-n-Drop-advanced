@@ -11,10 +11,13 @@
     
     _initEvent () {
       this._elem.addEventListener('mousedown', this._onMouseDown);
-      this._elem.addEventListener('startdrag', (event) => {
+      this._elem.ondragstart = function() {
+        return false;
+      };
+     /* this._elem.addEventListener('startdrag', (event) => {
 
-        if (event.target.contains('.instagram__photo')) event.preventDefault();
-      });
+        event.preventDefault();
+      });*/
         
     }
 
